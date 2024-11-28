@@ -6,13 +6,13 @@ function App() {
   return (
     <>
       <h1 className="text-4xl mb-20 text-center font-bold">Day 1</h1>
-      
+
       <Device name="Rahat" age="24"></Device>
       <Student name="Sara" age="23" grade="13" score="90"></Student>
       <Student name="Jahan" age="24" grade="14" score="95"></Student>
       <Student></Student>
-      <ToDo task='Learn React'></ToDo>
-      <ToDo task='Explore React Docomentation'></ToDo>
+      <ToDo task="Learn React" isDone={true}></ToDo>
+      <ToDo task="Explore React Docomentation" isDone={false}></ToDo>
     </>
   );
 }
