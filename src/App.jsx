@@ -11,8 +11,8 @@ function App() {
       <Student name="Sara" age="23" grade="13" score="90"></Student>
       <Student name="Jahan" age="24" grade="14" score="95"></Student>
       <Student></Student>
-      <ToDo task="Learn React" isDone={true}></ToDo>
-      <ToDo task="Explore React Docomentation" isDone={false}></ToDo>
+      <ToDo task="Learn React" isDone={true}> </ToDo>
+      <ToDo task="Explore React Docomentation" isDone={false}> </ToDo>
     </>
   );
 }

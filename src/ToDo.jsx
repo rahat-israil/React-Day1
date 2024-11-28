@@ -10,18 +10,18 @@ import PropTypes from "prop-types";
 
 
 // Conditional Rendaring
-const ToDo = ({ task, isDone }) => {
-  if (isDone === true) {
-    return <li>Finished: {task}</li>
-  }
-  else {
-    return <li>Work on: {task}</li>
-  }
-};
+const ToDo = ({ task, isDone }) =>  {
+  if (isDone === true)  {
+    return <li>Finished:  {task}</li>
+  } 
+  else { 
+    return <li>Work on: {task}</li> 
+  } 
+}; 
 
 ToDo.propTypes = {
   task: PropTypes.object.isRequired,
-  isDone: PropTypes.bool,
+  isDone: PropTypes.bool, 
 }
 
 export default ToDo;
