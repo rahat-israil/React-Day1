@@ -8,6 +8,7 @@ function App() {
       <h1 className='text-4xl mb-20 text-center font-bold'>Day 1</h1>
       <Device name='Rahat' age='24'></Device>
       <Student name='Sara' age='23' grade='13' score='90'></Student>
+      <Student name='Jahan' age='24' grade='14' score='95'></Student>
     </>
   )
 }
@@ -21,7 +22,7 @@ function Device(props) {
 
 function Student({ name, age, grade, score }) {
   return (
-    <div className='border-2 border-purple-900 rounded-lg p-10 w-fit'>
+    <div className='border-2 border-purple-900 rounded-lg p-10 w-fit mt-5'>
       <h1>My name is {name}.</h1>
       <h2>I read in class {grade}.</h2>
       <h2>I am {age} years old.</h2>
