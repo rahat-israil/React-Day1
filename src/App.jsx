@@ -1,4 +1,5 @@
 import './App.css'
+import PropTypes from 'prop-types';
 
 function App() {
 
@@ -29,5 +30,15 @@ function Student({ name, age, grade, score }) {
   );
  }
 
+ Device.propTypes = {
+   name: PropTypes.string,
+   age: PropTypes.number,
+ };
+Student.propTypes = {
+  name: PropTypes.string,
+  age: PropTypes.number,
+  grade: PropTypes.number,
+  score: PropTypes.number,
+};
 
 export default App
