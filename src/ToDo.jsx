@@ -28,9 +28,25 @@ import PropTypes from "prop-types";
 // };
  
 // Conditional Rendering 3 (Ternary Operator)
+// const ToDo = ({ task, isDone }) => {
+//   return <li> {isDone? 'Finished' : 'Work on'} : {task}</li>
+//  };
+
+// Conditional Rendering 4 with &&
 const ToDo = ({ task, isDone }) => {
-  return <li> {isDone? 'Finished' : 'Work on'} : {task}</li>
- };
+  return (
+    <li>{task} { isDone && ': Done' }</li>
+  )
+};
+ 
+// Conditional Rendering 5 with ||
+const ToDo = ({ task, isDone }) => {
+  return (
+    <li>
+      {task} {isDone || ': Do it'}
+    </li>
+  );
+};
 
 
 ToDo.propTypes = {
