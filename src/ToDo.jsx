@@ -33,11 +33,11 @@ import PropTypes from "prop-types";
 //  };
 
 // Conditional Rendering 4 with &&
-const ToDo = ({ task, isDone }) => {
-  return (
-    <li>{task} { isDone && ': Done' }</li>
-  )
-};
+// const ToDo = ({ task, isDone }) => {
+//   return (
+//     <li>{task} { isDone && ': Done' }</li>
+//   )
+// };
  
 // Conditional Rendering 5 with ||
 const ToDo = ({ task, isDone }) => {
@@ -47,6 +47,9 @@ const ToDo = ({ task, isDone }) => {
     </li>
   );
 };
+
+
+
 
 
 ToDo.propTypes = {

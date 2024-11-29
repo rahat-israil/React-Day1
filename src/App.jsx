@@ -1,8 +1,16 @@
 import './App.css';
 import PropTypes from 'prop-types';
 import ToDo from './ToDo';
+import Books from './Books';
 
 function App() {
+
+  const books = [
+    { id: 1, name: 'Bangla', price: 100 },
+    { id: 2, name: 'English', price: 150 },
+    { id: 3, name: 'Math', price: 200 },
+    { id: 4, name: 'History', price: 250 },
+  ];
   return (
     <>
       <h1 className="text-4xl mb-20 text-center font-bold">Day 1</h1>
@@ -13,6 +21,8 @@ function App() {
       <Student></Student>
       <ToDo task="Learn React" isDone={true}> </ToDo>
       <ToDo task="Explore React Docomentation" isDone={false}> </ToDo>
+
+      <Books books={books}></Books>
     </>
   );
 }
